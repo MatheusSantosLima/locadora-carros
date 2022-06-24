@@ -1,0 +1,33 @@
+ht<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação CPF</title>
+<script type='text/javascript'>
+    var vet_cpf=[5,5,9,5,8,6,9,9,1,0,0];
+    var soma=0,dig_01=0,dig_02=0, j=0;
+    vet_cpf.reverse();
+    for(var i=0;i<vet_cpf.length;i++){
+        vet_cpf[i]=vet_cpf[i]*i;
+        soma+=vet_cpf[i];
+    }
+    dig_01=(soma*10)%11;
+    if(dig_01==10||dig_01==11){
+        dig_01=0;
+    }
+vet_cpf=[5,5,9,5,8,6,9,9,1,0,0];
+vet_cpf[9]=dig_01;
+soma=dig_01*11;//segundo digito verificador
+vet_cpf.reverse();
+    for(var i=1;i<vet_cpf.length;i++){
+        vet_cpf[j]=vet_cpf[j]*i;
+        soma+=vet_cpf[j];
+        dig_02=(soma*10)%11;
+        j++
+    }
+document.write(" Os digitos verificadores são "+dig_01+dig_02);
+</script></head>
+<body>    
+</body></html>

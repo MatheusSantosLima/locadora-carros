@@ -1,0 +1,70 @@
+*{
+	margin:100;    /* resetar margens do navegador */
+	padding:100;   /*resetar espaços */
+}
+body{
+	background-color:yellowgreen; /* cor do fundo da página*/
+}
+.flex-container {
+    display: flex;
+}
+#box{  /* div id - sempre idenficada pelo símbolo "#" */
+	width:330px; /*largura do bloco de conteúdo */
+	height:0 auto; /* altura autmomática para preenchimento de conteúdo */
+	margin-left:30px; /* margem esquerda */
+	padding:20px 20px 20px 20px; /* margens internas do bloco - superior, direito, inferior e esquerdo 20px. */
+	background-color:rgb(189, 201, 247); /* cor do box */
+	border-radius:15px; /* arrendondamento de bordas do box */
+	box-shadow:2px 4px 8px black; /* sombra do box - tamanho, deslocamento, enevoamente e cor */
+}
+#imagem{  /* div id - sempre idenficada pelo símbolo "#" */
+	height:0 auto; /* largura do bloco de conteúdo */
+	height:0 auto; /* altura autmomática para preenchimento de conteúdo */
+	width:0 auto;
+	align-content: center;
+	margin-left:30px; /* margem esquerda */
+	padding: 20px 20px 20px 20px; /* margens internas do bloco - superior, direito, inferior e esquerdo 20px. */
+	background-color:rgb(189, 201, 247); /* cor do box */
+	border-radius:15px; /* arrendondamento de bordas do box */
+	box-shadow:2px 4px 8px black; /* sombra do box - tamanho, deslocamento, enevoamente e cor */
+}
+label{
+	font-family:"tahoma"; /* tipo de fonte */
+	color:black; /* cor da fonte */
+	margin-top:10px; /* margem da base */	
+}
+h1{
+	margin-left:30px; /* margem esquerda */
+	font-family:"Arial Black", Gadget, sans-serif; /* tipo de fonte */
+	color:white; /* cor da fonte */
+	margin-top:30px; /* margem do topo */
+	margin-bottom:20px; /* margem da base */
+	text-shadow:1px 1px black; /* sombra do texto - tamanho, deslocamento e cor */
+}
+h2{
+	font-family:"tahoma"; /* tipo de fonte */
+	color:black; /* cor da fonte */
+	margin-top:10px; /* margem da base */
+}
+p{
+	font-family:Arial, Helvetica, sans-serif; /* tipo de fonte */
+	color:#808080; /* cor da fonte */
+	text-align:justify; /* alinhamento do texto */
+	margin-top:20px; /* margem do topo */
+	line-height: 20px; /* espaçamento entre linhas */
+	text-indent: 30px; /* tabulação da primeira linha */
+}
+/*tr:nth-child(odd) {
+	background-color: #dddddd;
+}*/
+a{
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: rgb(119, 119, 255);
+}
+a:visited{
+	color:grey;
+}
+a:hover{
+	color:cornflowerblue;
+}
